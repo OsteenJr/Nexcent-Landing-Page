@@ -7,10 +7,11 @@
 }
 body {
     font-family: "Inter", sans-serif;
-    background-color: #F5F7FA;
+    background-color: #FFF;
 }
 header {
-    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: #F5F7FA;
 }
 nav {
     display: flex;
@@ -87,16 +88,15 @@ nav .nav-list .nav-item .nav-links {
 }
 section {
     max-width: 1440px;
-    margin: 1rem;
     padding: 1rem 5rem;
 }
 .hero-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
     place-items: center;
-    margin-top: 5rem;
     background-color: #F5F7FA;
     padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 .hero-text {
  align-self: flex-start;
@@ -135,21 +135,61 @@ section {
     text-decoration: none;
 }
 .mgt-section {
-    background-color: #fff;
-    padding-top: 4rem;
+    background-color: hsl(0, 0%, 100%);
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5rem;
 }
 .mgt-section-container {
     display: flex;
 }
 .each-container {
     text-align: center;
+    padding: 24px 32px;
+    border-radius: 8px;
+    gap: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+}
+.each-container img {
+    margin-bottom: 1.5rem;
+}
+.each-container h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #4D4D4D;
+    margin-bottom: 0.5rem;
+}
+.each-container p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #717171;
+}
+.section-title {
+    font-size: 36px;
+    line-height: 44px;
+    color: #4D4D4D;
+    text-align: center;
+    font-weight: 600;
+}
+.section-desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #717171;
+    margin-bottom: 0.5rem;
 }
 .casestudy-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    background-color: #fff;
+    
 }
 .stat-section {
     display: grid;
