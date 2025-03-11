@@ -96,6 +96,7 @@ section {
     place-items: center;
     margin-top: 5rem;
     background-color: #F5F7FA;
+    padding-bottom: 4rem;
 }
 .hero-text {
  align-self: flex-start;
@@ -133,6 +134,42 @@ section {
     border-radius: 4px;
     text-decoration: none;
 }
+.mgt-section {
+    background-color: #fff;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mgt-section-container {
+    display: flex;
+}
+.each-container {
+    text-align: center;
+}
+.casestudy-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.stat-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.stat-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.stat-container div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.stat-container div img {
+    grid-row: 1 / 3;
+}
+
 @media screen and (max-width: 950px) {
     .menu-btn {
         display: block;
