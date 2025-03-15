@@ -185,22 +185,59 @@ section {
     color: #717171;
     margin-bottom: 0.5rem;
 }
-.casestudy-section {
+.casestudy-section, .guide-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-color: #fff;
+    gap: 2rem;
     
 }
+.casestudy-text, .guide-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+}
+.casestudy-title, .guide-title {
+    font-size: 36px;
+    line-height: 44px;
+    color: #4D4D4D;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.casestudy-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    margin-bottom: 1rem;
+}
+.casestudy-text a, .guide-text a {
+    color: #fff;
+    background-color: #4CAF4F;
+    padding: 14px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 1rem;
+}
+
+
 .stat-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    background-color: #F5F7FA;
+    padding: 4rem 0;
 }
 .stat-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 .stat-container div {
     display: grid;
@@ -209,6 +246,197 @@ section {
 .stat-container div img {
     grid-row: 1 / 3;
 }
+.stat-container div h3 {
+    font-size: 28px;
+    line-height: 36px;
+    color: #4D4D4D;
+}
+.stat-section div p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #717171;
+}
+.guide-section {
+    padding: 5rem;
+}
+.guide-div {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+.guide-div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guide-div div i {
+    color: #4D4D4D;
+    border-radius: 50%;
+    border: 1px solid #4D4D4D;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.guide-div div h3 {
+    color: #4D4D4D;
+    font-size: 16px;
+}
+.guide-div div p {
+    font-size: 12px;
+}
+.partners-section {
+    background-color: #F5F7FA;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.partners-text {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.partners-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.partner-logo {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-logo img {
+    max-height: 100%;
+    max-width: 120px;
+    object-fit: contain;
+}
+.testimonial-section {
+    background-color: #FFF;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.testimonial-text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4D4D4D;
+    margin-bottom: 0.2rem;
+}
+
+.testimonial-info p {
+    font-size: 14px;
+    color: #717171;
+}
+
+.testimonial-quote {
+    font-size: 14px;
+    line-height: 20px;
+    color: #4D4D4D;
+}
+
+.testimonial-rating {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.testimonial-rating i {
+    color: #FFC107;
+}
+.simple-newsletter-section {
+    background-color: #F5F7FA;
+    padding: 4rem 0;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.simple-newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.simple-newsletter-form {
+    display: flex;
+    margin-top: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.newsletter-submit {
+    background-color: #4CAF4F;
+    color: white;
+    border: none;
+    padding: 0 24px;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 
 @media screen and (max-width: 950px) {
     .menu-btn {
